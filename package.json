@@ -1,7 +1,8 @@
 {
   "name": "headkit-workspace",
   "scripts": {
-    "dev": "turbo run dev --scope=@headkit/* --no-deps"
+    "dev": "turbo run dev --scope=@headkit/* --no-deps",
+    "build": "turbo run build --scope=@headkit/* --no-deps"
   },
   "license": "MIT",
   "devDependencies": {
