@@ -1,0 +1,12 @@
+{
+  "name": "headkit-workspace",
+  "scripts": {
+    "dev": "turbo run dev --scope=@headkit/* --no-deps"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^5.11.11",
+    "turbo": "^1.1.1",
+    "typescript": "^4.5.5"
+  }
+}
