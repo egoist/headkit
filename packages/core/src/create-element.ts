@@ -8,7 +8,7 @@ export const createElement = (
   for (const key of Object.keys(attrs)) {
     let value = attrs[key]
 
-    if (key === "key" || value === false) {
+    if (key === "key" || value === false || value == null) {
       continue
     }
 

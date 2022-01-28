@@ -1,0 +1,32 @@
+{
+  "name": "@headkit/react",
+  "version": "0.0.0",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@headkit/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}

@@ -4,9 +4,13 @@ import {
   HeadManager,
   HeadElementAttrs,
   IS_BROWSER,
+  renderToString as _renderToString,
 } from "@headkit/core"
 
 const PROVIDE_KEY = Symbol("for-head")
+
+export const renderToString = (head: ReturnType<typeof createHead>) =>
+  _renderToString(head.manager)
 
 export const createHead = () => {
   const manager = createHeadManager()
