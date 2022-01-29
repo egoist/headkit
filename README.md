@@ -2,7 +2,7 @@
 
 > Framework-agnostic `<head>` management.
 
-This is made for [ViteKit](https://github.com/egoist/headkit), but it can be used for any other project.
+This is made for [ViteKit](https://github.com/egoist/vitekit), but it can be used for any other project.
 
 Currently support:
 
