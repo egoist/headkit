@@ -6,13 +6,13 @@ importers:
     specifiers:
       '@changesets/changelog-github': ^0.4.2
       '@changesets/cli': ^2.20.0
-      tsup: ^5.11.11
+      tsup: ^5.11.12
       turbo: ^1.1.1
       typescript: ^4.5.5
     devDependencies:
       '@changesets/changelog-github': 0.4.2
       '@changesets/cli': 2.20.0
-      tsup: 5.11.11_typescript@4.5.5
+      tsup: 5.11.12_typescript@4.5.5
       turbo: 1.1.1
       typescript: 4.5.5
 
@@ -820,12 +820,14 @@ packages:
       picocolors: 1.0.0
     dev: false
 
-  /bundle-require/2.3.0_esbuild@0.14.14:
-    resolution: {integrity: sha512-kH8vyERJv0Td4Odu2KQyooYyeXDx2FbhGwSfkEGdyHmkTCahvwVI8w/pE2stbsp6G/W5/3kIC7ErdBg/30OAkw==}
+  /bundle-require/3.0.2_esbuild@0.14.14:
+    resolution: {integrity: sha512-WLS50LRdi8oAMnQfoxqjI3Fszi0xaI6dJumvtX909u0WREkYCuFGeE2UwMn5H8bSUXWtUB0XeBqNkgpVjMcYyQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       esbuild: '>=0.13'
     dependencies:
       esbuild: 0.14.14
+      load-tsconfig: 0.2.2
     dev: true
 
   /cac/6.7.12:
@@ -1758,6 +1760,11 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
+  /load-tsconfig/0.2.2:
+    resolution: {integrity: sha512-9B4XOMjNhphRmXg3YHFnpgEH5fmYKofXJ7M6sLkRcfJ5DcuPiStlQ1Or+1Rv/aML716kQ9Q+C9zJGUcfMYiq4Q==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: true
+
   /load-yaml-file/0.2.0:
     resolution: {integrity: sha512-OfCBkGEw4nN6JLtgRidPX6QxjBQGQf72q3si2uvqyFEMbycSFFHwAZeXx6cJgFM9wmLrf9zBwCP3Ivqa+LLZPw==}
     engines: {node: '>=6'}
@@ -2496,8 +2503,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tsup/5.11.11_typescript@4.5.5:
-    resolution: {integrity: sha512-rgbTu+KhAI9PdGUS07rKohDXbRLTstBGJaxl75q7RZYRGF+n+kN8L4RlXY5pqYb9Hsq0gEB6nS39v7nSvVBS+g==}
+  /tsup/5.11.12_typescript@4.5.5:
+    resolution: {integrity: sha512-zwOcdMaWKgbcJeWQ654OYdCfcy+dj9d3nzutPPmqiDPeHkmxjovIFX6xqvPTcIkMEuTsUgHuQDoJ0qS3r16zqA==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1.0
@@ -2505,7 +2512,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      bundle-require: 2.3.0_esbuild@0.14.14
+      bundle-require: 3.0.2_esbuild@0.14.14
       cac: 6.7.12
       chokidar: 3.5.3
       debug: 4.3.3
