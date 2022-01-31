@@ -1,15 +1,15 @@
 {
   "name": "headkit-workspace",
   "scripts": {
-    "dev": "turbo run dev --scope=@headkit/* --no-deps",
-    "build": "turbo run build --scope=@headkit/* --no-deps"
+    "dev": "node scripts/dev.js",
+    "build": "tasco run --filter \"@headkit/*\" build"
   },
   "license": "MIT",
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.2",
     "@changesets/cli": "^2.20.0",
+    "tasco": "^0.4.5",
     "tsup": "^5.11.12",
-    "turbo": "^1.1.1",
     "typescript": "^4.5.5"
   }
 }

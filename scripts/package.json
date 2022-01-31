@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "scripts",
+  "type": "module",
+  "dependencies": {
+    "enquirer": "^2.3.6",
+    "execa": "^6.0.0"
+  }
+}
